@@ -2,33 +2,45 @@
   margin-top: 25px;
   margin-bottom: 50px;
   justify-content: space-between;
-  border: 1px solid crimson;
   .product-left {
-    background-image: url(../../images/box1_img.jpg);
+    background-image: url(../images/box1_img.jpg);
     background-repeat: no-repeat;
   }
   .product-center {
-    background-image: url(../../images/box2_img.jpg);
+    background-image: url(../images/box2_img.jpg);
     background-repeat: no-repeat;
   }
+  
+  .product-right {
+    border: 2px solid map-get($colors, border);
+    p {
+      padding-left: 5%;
+      color: map-get($colors, text);
+    }
+  }
+
   h2 {
-    font-size: 252px;
-    background-color: purple;
+    font-size: 16px;
+    background-color: map-get($colors, titleBgc);
+    line-height: 3rem;
+    padding-left: 5%;
     width: 94%;
-    line-height: 100%;
-    align-content: center;
     display: inline-block;
     position: relative;
-    margin-top: 25%;
+
     &:after {
       content: "";
-      width: 315px;
+      width: 150px;
       height: 8px;
       background: var(--color);
       position: absolute;
-      left: 0;
+      left: 5%;
       bottom: 0;
     }
+    
+  }
+  .product-title {
+    margin-top: 45%;
   }
 }
 
