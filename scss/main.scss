@@ -1,0 +1,13 @@
+/*load modules*/
+@import "module/colors";
+@import "module/mixins";
+
+/*load partials*/
+@import "partials/normalize"; //zawsze na  początku
+@import "partials/base";
+@import "partials/header";
+
+
+
+
+
