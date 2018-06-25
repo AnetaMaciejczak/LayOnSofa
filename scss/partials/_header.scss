@@ -150,7 +150,7 @@ body {
   left: 50px;
   transform: translate(-50%, 0);
 }
-z
+
 .page-nav-sublist:after {
   content: "";
   background: transparent;
@@ -221,109 +221,3 @@ z
   z-index: 1;
 
 }
-/***************************************************/
-/*formularz*/
-/***************************************************************************************************/
-.form {
-  display: flex;
-  justify-content: space-between;
-}
-
-.form-left {
-  width: 630px;
-}
-
-.form-right {
-  width: 340px;
-}
-
-.form-row {
-  margin-bottom: 28px;
-}
-
-.form-addition {
-  height: 200px;
-  background-image: url(../images/red_chair.png);
-  background-repeat: no-repeat;
-  background-position: center top;
-  margin-top: -27px;
-}
-
-.form-control {
-  height: 63px;
-  border: 1px solid var(--color);
-  width: 100%;
-  padding: 0 15px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 33px;
-  font-weight: 300;
-}
-
-textarea.form-control {
-  height: 190px;
-  /*usuwa pokrętełko*/
-  resize: none;
-  padding: 15px;
-}
-
-.form-control::placeholder {
-  color: #cecece;
-}
-
-.form-control:focus {
-  outline: none;
-  border-color: var(--color);
-  /*wewnętrzny cień*/
-  box-shadow:inset 0 0 0 1px var(--color);
-
-}
-
-.form-checkbox {
-  display: flex;
-  /*aby była łapka*/
-  cursor: pointer;
-  align-items: center;
-  margin: 35px 0;
-  color: #ccc;
-  font-size: 18px;
-}
-
-
-/*nie da się stylować checkboxów*/
-/*.form-checkbox-input {*/
-/*!*width: 50px;*!*/
-/*!*height: 50px;*!*/
-/*background-color: red;*/
-/*border: 4px solid blue;*/
-/*}*/
-
-.form-checkbox-input {
-  position: absolute;
-  left: -99999px;
-}
-
-.form-checkbox-mark {
-  border: 1px solid var(--color);
-  width: 50px;
-  height: 50px;
-  flex-shrink: 0;
-  display: block;
-  margin-right: 10px;
-}
-
-/*mark bezpośrednio za imput - w tym przypadku dodaliśµy cheked - więc bezpośrednio za zaznaczonym*/
-.form-checkbox-input:checked + .form-checkbox-mark {
-  background-image: url(../images/form_ok.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-
-}
-
-
-.form-submit-btn {
-  width: 100%;
-  font-size: 34px;
-  font-weight: bolder;
-  padding: 20px;
-}
-
