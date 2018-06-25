@@ -1,6 +1,77 @@
-//.pricing {
-//  .pricing-title {
-//    display: inline;
-//    color: purple;
-//  }
-//}
+.pricing {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+
+  .pricing-title {
+    @include title;
+    &:after {
+      @include underline;
+    }
+  }
+  [class*=col] {
+    border: 2px solid map-get($colors, border);
+    position: relative;
+    top: 40px;
+    margin-bottom: 60px;
+    padding: 5% 3%;
+    text-align: center;
+  }
+  .pricing-left {
+    margin-right: 2%;
+    h2 {
+      color: map-get($colors, buttom);
+    }
+  }
+  .pricing-center {
+    margin: 0 1%;
+    background-color: map-get($colors, buttom);
+    border: 2px solid map-get($colors, buttom);
+    h2 {
+      color: map-get($colors, backgraund);
+    }
+  }
+
+  .pricing-right {
+    margin-left: 2%;
+    h2 {
+      color: map-get($colors, buttom);
+    }
+  }
+  h2 {
+    font-size: 22px;
+    text-transform: uppercase;
+  }
+  .price-box {
+    height: 130px;
+    width: 130px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 2%;
+    border: 2px solid map-get($colors, border);
+    font-size: 22px;
+    font-weight: 900;
+
+
+  }
+}
+
+
+.circle {
+  border: 2px solid map-get($colors, border);
+  background: map-get($colors, border);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  margin:0;
+  box-shadow: 0 0 0 15px white inset;
+
+}
+
+
+

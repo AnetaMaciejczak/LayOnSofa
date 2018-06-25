@@ -10,4 +10,23 @@
   }
 }
 
+@mixin title {
+  color: map-get($colors, text);
+  position: relative;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+
+@mixin underline {
+  content: "";
+  width: 315px;
+  height: 8px;
+  background: map-get($colors, buttom);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+
 

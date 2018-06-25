@@ -2,17 +2,23 @@
   margin-top: 25px;
   margin-bottom: 50px;
   justify-content: space-between;
+
   .product-left {
     background-image: url(../images/box1_img.jpg);
+    background-size: 100%;
     background-repeat: no-repeat;
+    margin-right: 2%;
   }
   .product-center {
     background-image: url(../images/box2_img.jpg);
     background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 1%;
   }
   
   .product-right {
     border: 2px solid map-get($colors, border);
+    margin-left: 2%;
     p {
       padding-left: 5%;
       color: map-get($colors, text);
@@ -24,7 +30,7 @@
     background-color: map-get($colors, titleBgc);
     line-height: 3rem;
     padding-left: 5%;
-    width: 94%;
+    width: 100%;
     display: inline-block;
     position: relative;
 

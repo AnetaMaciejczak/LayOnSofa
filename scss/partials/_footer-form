@@ -20,7 +20,7 @@
 
 .form-addition {
   height: 200px;
-  background-image: url(../../images/red_chair.png);
+  background-image: url(../images/red_chair.png);
   background-repeat: no-repeat;
   background-position: center top;
   margin-top: -27px;
@@ -90,7 +90,7 @@ textarea.form-control {
 
 /*mark bezpośrednio za imput - w tym przypadku dodaliśµy cheked - więc bezpośrednio za zaznaczonym*/
 .form-checkbox-input:checked + .form-checkbox-mark {
-  background-image: url(../../images/form_ok.jpg);
+  background-image: url(../images/form_ok.jpg);
   background-position: center;
   background-repeat: no-repeat;
 
@@ -102,4 +102,3 @@ textarea.form-control {
   font-weight: bolder;
   padding: 20px;
 }
-
