@@ -12,7 +12,7 @@
     }
   }
   [class*=col] {
-    border: 2px solid map-get($colors, border);
+    border: 2px solid map-get($colors, borderc);
     position: relative;
     top: 40px;
     text-align: center;
@@ -20,8 +20,8 @@
   }
 
   .circle {
-    border: 2px solid map-get($colors, border);
-    background: map-get($colors, border);
+    border: 2px solid map-get($colors, borderc);
+    background: map-get($colors, borderc);
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -49,7 +49,7 @@
       background-color: map-get($colors, backgraund);
     }
     .main-price-bay {
-      background-color: map-get($colors, border);
+      background-color: map-get($colors, borderc);
     }
     .main-price-service {
       background-color: map-get($colors, main);
@@ -98,7 +98,7 @@
     }
     .main-price-bay,
     .main-price-warranty {
-      background-color: map-get($colors, border);
+      background-color: map-get($colors, borderc);
     }
     .main-price-service,
     .main-price-advice {
@@ -115,19 +115,19 @@
     margin: 0 auto 10% auto;
     border-radius: 50%;
     position: relative;
-    border: 2px solid map-get($colors, border);
+    border: 2px solid map-get($colors, borderc);
     font-size: 25px;
 
 
     .main-price {
       font-size: 45px;
       margin: 20% 0 0 9%;
-      color: map-get($colors, border);
+      color: map-get($colors, borderc);
       display: inline-block;
       font-weight: 600;
     }
     .main-price-sup {
-      color: map-get($colors, border);
+      color: map-get($colors, borderc);
       font-size: 16px;
       display: inline-block;
       position: relative;
@@ -135,7 +135,7 @@
       top: - 20%;
     }
     .main-price-valut {
-      color: map-get($colors, border);
+      color: map-get($colors, borderc);
       font-size: 16px;
       padding: 0;
       margin: 0 auto;

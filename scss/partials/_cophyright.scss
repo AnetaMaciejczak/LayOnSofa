@@ -1,0 +1,17 @@
+.copyright {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  color: map-get($colors, text);
+  font-size: 16px;
+  line-height: 50px;
+  text-align: left;
+  vertical-align: middle;
+
+  .copyright-logo {
+    font-size: 20px;
+    text-transform: uppercase;
+    span {
+      font-weight: 700;
+    }
+  }
+}
