@@ -2,6 +2,8 @@
   margin-top: 25px;
   margin-bottom: 50px;
   justify-content: space-between;
+  background-color: map-get($colors, main);
+  padding: 5% 0;
 
   .pricing-title {
     @include title;
@@ -13,64 +15,162 @@
     border: 2px solid map-get($colors, border);
     position: relative;
     top: 40px;
-    margin-bottom: 60px;
-    padding: 5% 3%;
     text-align: center;
-  }
-  .pricing-left {
-    margin-right: 2%;
-    h2 {
-      color: map-get($colors, buttom);
-    }
-  }
-  .pricing-center {
-    margin: 0 1%;
-    background-color: map-get($colors, buttom);
-    border: 2px solid map-get($colors, buttom);
-    h2 {
-      color: map-get($colors, backgraund);
-    }
+    margin-bottom: 50px;
   }
 
-  .pricing-right {
-    margin-left: 2%;
-    h2 {
-      color: map-get($colors, buttom);
-    }
+  .circle {
+    border: 2px solid map-get($colors, border);
+    background: map-get($colors, border);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    margin:0;
+    box-shadow: 0 0 0 15px white inset;
   }
   h2 {
     font-size: 22px;
     text-transform: uppercase;
+    margin-top: 10%;
+  }
+  
+  .pricing-left {
+    margin-right: 2%;
+    background-color: map-get($colors, lithBackgraud);
+    h2 {
+      color: map-get($colors, buttom);
+    }
+    .price-box {
+      background-color: map-get($colors, backgraund);
+    }
+    .main-price-bay {
+      background-color: map-get($colors, border);
+    }
+    .main-price-service {
+      background-color: map-get($colors, main);
+    }
+    .main-price-btn {
+      margin-top: 9rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .pricing-center {
+    background-color: map-get($colors, buttom);
+    border: 2px solid map-get($colors, buttom);
+    .price-box {
+      background-color: map-get($colors, lithBackgraud);
+    }
+    .circle {
+      border-color: map-get($colors, buttom);
+      box-shadow: 0 0 0 15px map-get($colors, buttom) inset;
+      background-color: map-get($colors, backgraund);
+    }
+    h2 {
+      color: map-get($colors, backgraund);
+    }
+    .main-price-bay,
+    .main-price-warranty {
+      background-color: map-get($colors, backgraund);
+    }
+    .main-price-service {
+      background-color: map-get($colors, main);
+    }
+    .main-price-btn {
+      margin-top: 6rem;
+      margin-bottom: 3rem;
+      color: map-get($colors, buttom);
+      background-color: map-get($colors, backgraund);
+    }
+  }
+  .pricing-right {
+    margin-left: 2%;
+    background-color: map-get($colors, lithBackgraud);
+    .price-box {
+      background-color: map-get($colors, backgraund);
+    }
+    h2 {
+      color: map-get($colors, buttom);
+    }
+    .main-price-bay,
+    .main-price-warranty {
+      background-color: map-get($colors, border);
+    }
+    .main-price-service,
+    .main-price-advice {
+      background-color: map-get($colors, main);
+    }
+    .main-price-btn {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    }
   }
   .price-box {
     height: 130px;
     width: 130px;
-    margin: 0 auto;
+    margin: 0 auto 10% auto;
     border-radius: 50%;
-    padding: 2%;
+    position: relative;
     border: 2px solid map-get($colors, border);
-    font-size: 22px;
-    font-weight: 900;
+    font-size: 25px;
 
+
+    .main-price {
+      font-size: 45px;
+      margin: 20% 0 0 9%;
+      color: map-get($colors, border);
+      display: inline-block;
+      font-weight: 600;
+    }
+    .main-price-sup {
+      color: map-get($colors, border);
+      font-size: 16px;
+      display: inline-block;
+      position: relative;
+      font-weight: 600;
+      top: - 20%;
+    }
+    .main-price-valut {
+      color: map-get($colors, border);
+      font-size: 16px;
+      padding: 0;
+      margin: 0 auto;
+    }
 
   }
 }
 
+.main-price-bay,
+.main-price-service,
+.main-price-warranty,
+.main-price-advice {
+  color: map-get($colors, lightText);
+  font-size: 20px;
+  width: 100%;
+  line-height: 3rem;
+  display: inline-block;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
 
-.circle {
-  border: 2px solid map-get($colors, border);
-  background: map-get($colors, border);
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-sizing: border-box;
-  margin:0;
-  box-shadow: 0 0 0 15px white inset;
 
+.main-price-btn {
+  width: 50%;
+  font-size: 16px;
+  font-weight: bolder;
+  color: #fff;
+  background-color: map-get($colors, buttom);
+  border: 0;
+  padding: 10px 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 7px;
+  //position: relative;
+  display: inline-block;
 }
 
 
