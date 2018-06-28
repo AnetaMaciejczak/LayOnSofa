@@ -38,7 +38,38 @@
     text-transform: uppercase;
     margin-top: 10%;
   }
-  
+  .price-box {
+    height: 130px;
+    width: 130px;
+    margin: 0 auto 10% auto;
+    border-radius: 50%;
+    position: relative;
+    border: 2px solid map-get($colors, borderc);
+    font-size: 25px;
+
+    .main-price {
+      font-size: 45px;
+      margin: 20% 0 0 9%;
+      color: map-get($colors, borderc);
+      display: inline-block;
+      font-weight: 600;
+    }
+    .main-price-sup {
+      color: map-get($colors, borderc);
+      font-size: 16px;
+      display: inline-block;
+      position: relative;
+      font-weight: 600;
+      top: - 20%;
+    }
+    .main-price-valut {
+      color: map-get($colors, borderc);
+      font-size: 16px;
+      padding: 0;
+      margin: 0 auto;
+    }
+  }
+
   .pricing-left {
     margin-right: 2%;
     background-color: map-get($colors, lithBackgraud);
@@ -64,6 +95,12 @@
     border: 2px solid map-get($colors, buttom);
     .price-box {
       background-color: map-get($colors, lithBackgraud);
+      .main-price,
+      .main-price-sup,
+      .main-price-valut {
+        color: map-get($colors, buttom);
+      }
+
     }
     .circle {
       border-color: map-get($colors, buttom);
@@ -109,39 +146,7 @@
       margin-bottom: 3rem;
     }
   }
-  .price-box {
-    height: 130px;
-    width: 130px;
-    margin: 0 auto 10% auto;
-    border-radius: 50%;
-    position: relative;
-    border: 2px solid map-get($colors, borderc);
-    font-size: 25px;
 
-
-    .main-price {
-      font-size: 45px;
-      margin: 20% 0 0 9%;
-      color: map-get($colors, borderc);
-      display: inline-block;
-      font-weight: 600;
-    }
-    .main-price-sup {
-      color: map-get($colors, borderc);
-      font-size: 16px;
-      display: inline-block;
-      position: relative;
-      font-weight: 600;
-      top: - 20%;
-    }
-    .main-price-valut {
-      color: map-get($colors, borderc);
-      font-size: 16px;
-      padding: 0;
-      margin: 0 auto;
-    }
-
-  }
 }
 
 .main-price-bay,
