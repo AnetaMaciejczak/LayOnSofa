@@ -16,6 +16,47 @@ document.addEventListener("DOMContentLoaded", function () {
         document.querySelector(".center").style.visibility = "visible";
     });
 
+    /********************************************************/
+    /*slajder*/
+    var next = document.querySelector(".banner-next");
+    var previus = document.querySelector(".banner-prev");
+    var imgList = document.querySelectorAll(".banner-img");
+    var index = 0;
+
+    console.log(next);
+    console.log(previus);
+    console.log(imgList);
+
+    imgList[index].classList.add("visible");
+
+    previus.addEventListener("click", function (element) {
+        imgList[index].classList.remove("visible");
+        index --;
+
+        if(index < 0) {
+            index = imgList.length - 1;
+        }
+        imgList[index].classList.add("visible");
+    });
+
+
+    next.addEventListener("click", function (element) {
+        imgList[index].classList.remove("visible");
+        index ++;
+
+        if(index >= imgList.length) {
+            index = 0;
+        }
+
+        imgList[index].classList.add("visible");
+    });
+
+
+
+
+
+
+
 
 
 });

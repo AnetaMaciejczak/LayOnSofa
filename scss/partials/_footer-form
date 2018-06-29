@@ -101,4 +101,5 @@ textarea.form-control {
   font-size: 34px;
   font-weight: bolder;
   padding: 20px;
+
 }

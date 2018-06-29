@@ -122,6 +122,11 @@
       margin-bottom: 3rem;
       color: map-get($colors, buttom);
       background-color: map-get($colors, backgraund);
+      &:hover {
+        color: map-get($colors, backgraund);
+        background-color: map-get($colors, lightText);
+        transition: 0.5s;
+      }
     }
   }
   .pricing-right {
@@ -174,8 +179,12 @@
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 7px;
-  //position: relative;
   display: inline-block;
+    &:hover {
+      color: map-get($colors, buttom);
+      background-color: map-get($colors, backgraund);
+      transition: 0.5s;
+    }
 }
 
 
