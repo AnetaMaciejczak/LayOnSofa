@@ -19,12 +19,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /********************************************************/
     /*slajder*/
+
     var next = document.querySelector(".banner-next");
     var previus = document.querySelector(".banner-prev");
     var imgList = document.querySelectorAll(".banner-img");
     var index = 0;
-    /*tworzę zmienne do timeInterwal*/
+    var timeDelay = 5000;
 
+    /*set interval*/
+    setInterval(function () {
+        imgList[index].classList.remove("visible");
+        index ++;
+        if(index >= imgList.length) {
+            index = 0;
+        }
+        imgList[index].classList.add("visible");
+
+    },timeDelay);
 
 
     console.log(next);
@@ -41,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
             index = imgList.length - 1;
         }
         imgList[index].classList.add("visible");
+        timeDelay = 5000;
     });
 
 
@@ -53,6 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         imgList[index].classList.add("visible");
+        timeDelay = 5000;
     });
 
 
