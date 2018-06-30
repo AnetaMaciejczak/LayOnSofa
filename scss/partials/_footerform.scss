@@ -1,9 +1,8 @@
 /***************************************************/
 /*formularz*/
 /***************************************************************************************************/
-.form {
+.contact-form {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -33,7 +32,7 @@
   width: 100%;
   padding: 0 15px;
   font-family: 'Raleway', sans-serif;
-  font-size: 33px;
+  font-size: 20px;
   font-weight: 300;
 }
 
