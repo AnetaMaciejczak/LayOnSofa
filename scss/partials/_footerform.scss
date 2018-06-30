@@ -3,6 +3,7 @@
 /***************************************************************************************************/
 .form {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -93,7 +94,6 @@ textarea.form-control {
   background-image: url(../images/form_ok.jpg);
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .form-submit-btn {
@@ -101,5 +101,8 @@ textarea.form-control {
   font-size: 34px;
   font-weight: bolder;
   padding: 20px;
-
 }
+
+
+
+

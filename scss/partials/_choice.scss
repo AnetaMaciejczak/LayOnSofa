@@ -177,7 +177,11 @@
   margin-left: 29px;
   border-radius: 8px;
   text-decoration: none;
+  @include hover;
 }
+
+
+
 .panel_left {
   display: flex;
   flex-direction: column;

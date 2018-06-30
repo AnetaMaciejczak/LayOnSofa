@@ -37,13 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     },timeDelay);
 
-
-    console.log(next);
-    console.log(previus);
-    console.log(imgList);
-
     imgList[index].classList.add("visible");
 
+    /*set previu button fution*/
     previus.addEventListener("click", function (element) {
         imgList[index].classList.remove("visible");
         index --;
@@ -55,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         timeDelay = 5000;
     });
 
-
+        /*set next butto funtion*/
     next.addEventListener("click", function (element) {
         imgList[index].classList.remove("visible");
         index ++;
@@ -81,10 +77,8 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     }
-
-
-
-    /*innertext in subbmit*/
+    /**************************************************************************/
+    /*subbmit*/
     var chairTypes = document.querySelectorAll(".chair_type li");
     var chairColor = document.querySelectorAll(".chair_color li");
     var chairMaterial = document.querySelectorAll(".chair_material li");
@@ -99,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var transportValue = document.querySelector(".transport_value");
     var sumValue = document.querySelector(".sum");
 
-    /*funkcja przenosząca wybrany element z listy dropdown do podsumowania, cadająca cenę i licząca sumę*/
+    /*funkcja przenosząca wybrany element z listy dropdown do podsumowania, dadająca cenę i licząca sumę*/
     var sum = 0;
 
     var submit = function (list, submitPlace, valuePlace) {
@@ -120,11 +114,8 @@ document.addEventListener("DOMContentLoaded", function () {
     submit(chairMaterial, material, materialValue);
 
     /*checkbox i pojawianie się opcji transport w submit*/
-    var tranasport = document.getElementById("transport");
-    console.log(tranasport);
 
-
-    tranasport.addEventListener("change", function () {
+    document.getElementById("transport").addEventListener("change", function () {
         if (this.checked) {
             document.querySelector(".transport_text").innerText = "Transport";
             transportValue.innerText = this.dataset.price;

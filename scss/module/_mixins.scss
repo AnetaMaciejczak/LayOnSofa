@@ -28,5 +28,13 @@
   bottom: 0;
 }
 
+@mixin hover {
+  &:hover {
+    color: map-get($colors, buttom);
+    background-color: map-get($colors, backgraund);
+    transition: 0.5s;
+  }
+}
+
 
 
