@@ -143,5 +143,4 @@ document.addEventListener("DOMContentLoaded", function () {
     /*ceny dodałam do data-set poszczególnych elementów*/
     // console.log(chairTypes[0].dataset.price);
 
-
 });
