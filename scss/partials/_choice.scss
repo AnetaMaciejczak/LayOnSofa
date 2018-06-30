@@ -1,5 +1,8 @@
 .application {
   background-color: #f9f9f9;
+  @include mobile {
+    width: 100%;
+  }
 
   .main_width {
     display: flex;
@@ -33,6 +36,11 @@
           }
         }
       }
+    }
+    @include mobile {
+      flex-direction: column;
+      flex-grow: 1;
+      width: 100%;
     }
   }
 }
@@ -240,6 +248,7 @@
 
 
 .list_panel {
+  display: none;
   background-color: white;
   border: 1px solid #ccc;
   width: 288px;
@@ -251,7 +260,6 @@
   z-index: 2;
   position: absolute;
   top: 54px;
-  display:none;
 }
 
 .list_panel li {

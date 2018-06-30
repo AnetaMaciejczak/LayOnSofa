@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    /*znikanie opisu obrazków*/
     var leftProduct = document.querySelector(".product-left");
     leftProduct.addEventListener("mouseover", function () {
         document.querySelector(".product-title").style.visibility = "hidden";
@@ -22,6 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
     var previus = document.querySelector(".banner-prev");
     var imgList = document.querySelectorAll(".banner-img");
     var index = 0;
+    /*tworzę zmienne do timeInterwal*/
+
+
 
     console.log(next);
     console.log(previus);
@@ -52,10 +56,18 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
+/*dropdownlist*/
+    var listArrow = document.querySelectorAll(".list_arrow");
 
-
-
-
+    for (var i=0; i<listArrow.length; i++) {
+        listArrow[i].addEventListener("click", function () {
+            if (this.nextElementSibling.style.display === "block") {
+                this.nextElementSibling.style.display = "none";
+            } else {
+                this.nextElementSibling.style.display = "block"
+            }
+        });
+    }
 
 
 
