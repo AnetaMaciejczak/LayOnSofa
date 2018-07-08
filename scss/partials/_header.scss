@@ -2,34 +2,6 @@
   --color: #24BA9F;
 }
 
-.section-title{
-  font-size: 22px;
-  color: #575757;
-  text-transform: uppercase;
-  position: relative;
-  padding-bottom: 15px;
-}
-
-.section-title:after {
-  content: "";
-  width: 315px;
-  height: 8px;
-  background: var(--color);
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.btn{
-  color: #fff;
-  background-color: var(--color);
-  border: 0;
-  padding: 20px 30px;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 7px;
-}
-
 /*********************************************************************/
 /*page header*/
 
@@ -38,6 +10,10 @@
   background-color: #000;
   position: relative;
   z-index: 100;
+  @include mobile {
+    height: 100%;
+
+  }
 }
 
 .page-header .container {
@@ -45,6 +21,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include mobile {
+    font-size: 12px;
+  }
 }
 
 .page-logo {
@@ -53,6 +32,11 @@
   font-size: 14px;
   text-decoration: none;
   font-weight: 600;
+  @include mobile {
+    padding-left: 5px;
+
+
+  }
 }
 
 .page-logo span {
@@ -68,6 +52,11 @@
   margin: 0;
   padding: 0;
   display: flex;
+  @include mobile {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .page-nav-list-el{
@@ -101,6 +90,11 @@
   opacity: 0;
   visibility: hidden;
   transition: 0.5s opacity;
+
+  @include mobile {
+    top: 0px;
+    left: -27%;
+  }
 }
 
 .page-nav-list-el:hover .page-nav-sublist {

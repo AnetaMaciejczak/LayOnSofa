@@ -16,6 +16,9 @@
   font-size: 22px;
   text-transform: uppercase;
   padding-bottom: 15px;
+  @include mobile {
+    margin-left: 5px;
+  }
 }
 
 @mixin underline {

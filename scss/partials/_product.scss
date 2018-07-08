@@ -2,18 +2,28 @@
   margin-top: 25px;
   margin-bottom: 50px;
   justify-content: space-between;
-
   .product-left {
     background-image: url(../images/box1_img.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
     margin-right: 2%;
+
+    @include mobile {
+      width: 100%;
+      margin: 0 auto;
+    }
   }
+
   .product-center {
     background-image: url(../images/box2_img.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     margin: 0 1%;
+
+    @include mobile {
+      width: 100%;
+      margin: 0 auto;
+    }
   }
   
   .product-right {
@@ -23,7 +33,13 @@
       padding-left: 5%;
       color: map-get($colors, text);
     }
+
+    @include mobile {
+      width: 100%;
+      margin: 0 auto;
+    }
   }
+
 
   h2 {
     font-size: 16px;

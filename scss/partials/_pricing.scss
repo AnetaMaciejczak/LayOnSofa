@@ -11,6 +11,7 @@
       @include underline;
     }
   }
+
   [class*=col] {
     border: 2px solid map-get($colors, borderc);
     position: relative;
@@ -88,7 +89,11 @@
     .main-price-btn {
       margin-top: 9rem;
       margin-bottom: 3rem;
+      @include mobile {
+        margin: 10px auto;
+      }
     }
+
   }
   .pricing-center {
     background-color: map-get($colors, buttom);
@@ -127,6 +132,9 @@
         background-color: map-get($colors, lightText);
         transition: 0.5s;
       }
+      @include mobile {
+        margin: 10px auto;
+      }
     }
   }
   .pricing-right {
@@ -149,7 +157,14 @@
     .main-price-btn {
       margin-top: 3rem;
       margin-bottom: 3rem;
+      @include mobile {
+        margin: 10px auto;
+      }
     }
+    @include mobile {
+      margin: 0 auto;
+    }
+
   }
 
 }
@@ -185,6 +200,7 @@
       background-color: map-get($colors, backgraund);
       transition: 0.5s;
     }
+
 }
 
 
