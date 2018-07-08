@@ -1,4 +1,5 @@
 # layOnSofa
+https://anetamaciejczak.github.io/LayOnSofa/.
 
 Layaut strony
 - slider z możliwością przerzucania slajdów zmudowany w JS (bez użycia blibliotek)
